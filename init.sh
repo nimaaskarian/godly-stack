@@ -23,3 +23,8 @@ echo Fetching dependency packages...
 for pckg in github.com/a-h/templ github.com/labstack/echo/v4 github.com/labstack/echo/v4/middleware; do
   go get "$pckg" || echo_exit ERROR: package \"$pckg\" installation failed.
 done
+
+which air > /dev/null 2>&1 || {
+  echo Installing air cli...
+  go install github.com/air-verse/air@latest || echo_exit ERROR: templ cli installation failed.
+}
