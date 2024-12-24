@@ -4,7 +4,7 @@ echo_exit() {
   exit 1
 }
 
-if [ $# -lt 1 ]; then
+if [ $# -lt 1 ] || ! [ "$1" ]; then
   echo_exit ./init.sh packagename
 fi
 
