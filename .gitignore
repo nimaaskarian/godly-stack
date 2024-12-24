@@ -1,0 +1,5 @@
+cmd/main
+cmd/*.log
+bin/
+view/**/*.go
+view/*.go
