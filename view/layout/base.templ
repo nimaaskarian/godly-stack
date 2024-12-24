@@ -11,9 +11,11 @@ templ Base(children ...templ.Component) {
       <script src="https://unpkg.com/htmx.org@2.0.4"></script>
     </head>
     <body>
+    <div class="mx-2 mt-2">
       for _, child := range children {
         @child
       }
+    </div>
     </body>
   </html>
 }
