@@ -6,7 +6,7 @@ fi
 git clone https://github.com/nimaaskarian/godly-stack "$1" || exit 1
 cd "$1" || exit 1
 rm -rf .git/
-./init.sh "$1" && rm init.sh && cd ..
+./init.sh "$1" && rm init.sh godly-create && cd ..
 
 echo Your project is ready! now you might want to run:
 echo cd "$1"
